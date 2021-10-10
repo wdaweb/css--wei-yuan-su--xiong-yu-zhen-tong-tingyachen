@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>熊</title>
+  <style>
+    .bear {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      margin: 50px auto;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    .bear::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 210px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: red;
+    }
+
+    .bear::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      top: 210px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: red;
+    }
+
+    .ear::before {
+      content: "";
+      position: absolute;
+      left: 70px;
+      top: -10px;
+      width: 110px;
+      height: 100px;
+      background: radial-gradient(100px, white 30%, black 31%);
+      border-radius: 50%;
+    }
+
+    .ear::after {
+      content: "";
+      position: absolute;
+      right: 70px;
+      top: -10px;
+      width: 110px;
+      height: 100px;
+      background: radial-gradient(100px, white 30%, black 31%);
+      border-radius: 50%;
+    }
+
+    .eye::before {
+      content: "";
+      position: absolute;
+      left: 125px;
+      top: 90px;
+      width: 120px;
+      height: 125px;
+      background: radial-gradient(130px, black 30%, white 31%);
+      border-radius: 50%;
+    }
+
+    .eye::after {
+      content: "";
+      position: absolute;
+      right: 125px;
+      top: 90px;
+      width: 120px;
+      height: 125px;
+      background: radial-gradient(130px, black 30%, white 31%);
+      border-radius: 50%;
+    }
+
+    .mouth {
+      position: absolute;
+      top: 210px;
+      left: 162px;
+      width: 280px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 50% / 50%;
+    }
+
+    .mouth::before {
+      content: "";
+      position: absolute;
+      left: 105px;
+      top: 20px;
+      width: 65px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50% / 50%;
+    }
+
+    .mouth::after {
+      content: "";
+      position: absolute;
+      left: 55px;
+      top: 90px;
+      width: 170px;
+      height: 65px;
+      background-color: black;
+      border-radius: 50% / 50%;
+    }
+
+    .line::before {
+      content: "";
+      position: absolute;
+      left: 174px;
+      bottom: 50px;
+      width: 72px;
+      height: 100px;
+      transform: skew(45deg, -1deg);
+      transform-origin: left top;
+      background-color: #fff;
+    }
+
+    .line::after {
+      content: "";
+      position: absolute;
+      right: 256px;
+      bottom: 50px;
+      width: 70px;
+      height: 100px;
+      transform: skew(138deg, 0deg);
+      transform-origin: right bottom;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bear">
+    <div class="ear"></div>
+    <div class="eye"></div>
+    <div class="mouth"></div>
+    <div class="line"></div>
+  </div>
+</body>
+
+</html>
